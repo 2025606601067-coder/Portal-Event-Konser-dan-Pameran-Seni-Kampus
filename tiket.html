@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="id" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PENTASKAMPUS — Konser, Event & Pameran Seni</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PENTASKAMPUS — Konser, Event & Pameran Seni</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -20,54 +22,183 @@
       }
     }
   </script>
-</head>
-<body class="bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 font-sans transition-colors duration-200 min-h-screen flex flex-col">
+    </head>
+    <body
+        class="bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 font-sans transition-colors duration-200 min-h-screen flex flex-col">
 
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
-      <a href="index.html" class="font-display font-extrabold text-xl tracking-tight">
-        PENTAS<span class="text-lime-500 dark:text-lime-400">KAMPUS.</span>
-      </a>
+        <header
+            class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
+            <div
+                class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+                <a href="index.html"
+                    class="font-display font-extrabold text-xl tracking-tight">
+                    PENTAS<span
+                        class="text-lime-500 dark:text-lime-400">KAMPUS.</span>
+                </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Beranda</a>
-        <a href="event.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Katalog Event</a>
-        <a href="detail.html?id=1" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Jadwal & Lineup</a>
-        <a href="tiket.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Pesan Tiket</a>
-        <a href="tentang.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Tentang</a>
-      </nav>
+                <nav
+                    class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a href="index.html"
+                        class="hover:text-lime-500 dark:hover:text-lime-400 transition">Beranda</a>
+                    <a href="event.html"
+                        class="hover:text-lime-500 dark:hover:text-lime-400 transition">Katalog
+                        Event</a>
+                    <a href="detail.html?id=1"
+                        class="hover:text-lime-500 dark:hover:text-lime-400 transition">Jadwal
+                        & Lineup</a>
+                    <a href="tiket.html"
+                        class="hover:text-lime-500 dark:hover:text-lime-400 transition">Pesan
+                        Tiket</a>
+                    <a href="tentang.html"
+                        class="hover:text-lime-500 dark:hover:text-lime-400 transition">Tentang</a>
+                </nav>
 
-      <div class="flex items-center gap-2">
-        <button id="theme-toggle" class="px-3 py-1.5 rounded-full text-xs font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-400 transition">
-          ☀️ Light
-        </button>
-        <a href="tiket.html" class="px-4 py-1.5 rounded-full text-xs font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition">
-          Beli Tiket
-        </a>
-      </div>
-    </div>
+                <div class="flex items-center gap-2">
+                    <button id="theme-toggle"
+                        class="px-3 py-1.5 rounded-full text-xs font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-400 transition">
+                        ☀️ Light
+                    </button>
+                    <a href="tiket.html"
+                        class="px-4 py-1.5 rounded-full text-xs font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition">
+                        Beli Tiket
+                    </a>
+                </div>
+            </div>
 
-    <nav class="flex md:hidden items-center gap-4 px-5 py-2.5 overflow-x-auto text-xs font-medium border-t border-zinc-200 dark:border-zinc-800">
-      <a href="index.html" class="whitespace-nowrap">Beranda</a>
-      <a href="event.html" class="whitespace-nowrap">Katalog Event</a>
-      <a href="detail.html?id=1" class="whitespace-nowrap">Jadwal & Lineup</a>
-      <a href="tiket.html" class="whitespace-nowrap">Pesan Tiket</a>
-      <a href="tentang.html" class="whitespace-nowrap">Tentang</a>
-    </nav>
-  </header>
+            <nav
+                class="flex md:hidden items-center gap-4 px-5 py-2.5 overflow-x-auto text-xs font-medium border-t border-zinc-200 dark:border-zinc-800">
+                <a href="index.html" class="whitespace-nowrap">Beranda</a>
+                <a href="event.html" class="whitespace-nowrap">Katalog Event</a>
+                <a href="detail.html?id=1" class="whitespace-nowrap">Jadwal &
+                    Lineup</a>
+                <a href="tiket.html" class="whitespace-nowrap">Pesan Tiket</a>
+                <a href="tentang.html" class="whitespace-nowrap">Tentang</a>
+            </nav>
+        </header>
 
-  <main class="flex-1 max-w-6xl mx-auto w-full px-5 py-10">
-    <h1 class="font-display font-extrabold text-3xl md:text-5xl uppercase tracking-tight mb-4">
-      Judul Halaman
-    </h1>
-    <p class="text-zinc-600 dark:text-zinc-400">Area konten masing-masing anggota...</p>
-  </main>
+        <main class="flex-1 max-w-6xl mx-auto w-full px-5 py-10">
+            <div class="mb-8">
+                <span
+                    class="text-xs font-bold uppercase tracking-widest text-lime-500 dark:text-lime-400">Box
+                    Office</span>
+                <h1
+                    class="font-display font-extrabold text-3xl md:text-5xl uppercase tracking-tight mt-1">
+                    Simulasi Tiket
+                </h1>
+                <p
+                    class="text-zinc-600 dark:text-zinc-400 mt-2 text-sm md:text-base">
+                    Pilih acara, tentukan kelas tiket, dan dapatkan E-Ticket
+                    digitalmu secara instan.
+                </p>
+            </div>
 
-  <footer class="border-t border-zinc-200 dark:border-zinc-800 py-6 text-center text-xs text-zinc-500">
-    &copy; 2026 PentasKampus — Portal Event, Konser & Pameran Seni Mahasiswa
-  </footer>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Kolom Kiri: Form Pemesanan -->
+                <form id="form-tiket"
+                    class="lg:col-span-7 p-6 md:p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-5">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Nama
+                            Lengkap Pemesan</label>
+                        <input type="text" id="input-nama" required
+                            placeholder="Contoh: Revianda Yulistyo"
+                            class="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 focus:outline-none focus:border-lime-400 text-sm" />
+                    </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/theme.js"></script>
-</body>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Pilih
+                            Acara / Pameran</label>
+                        <select id="pilih-event"
+                            class="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 focus:outline-none focus:border-lime-400 text-sm">
+                            <!-- Diisi otomatis oleh tiket.js dari dataEvent -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Kelas
+                            Tiket</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="kelas" value="Regular"
+                                    checked class="peer hidden" />
+                                <div
+                                    class="p-4 rounded-xl border border-zinc-300 dark:border-zinc-700 peer-checked:border-lime-400 peer-checked:bg-lime-400/10 transition">
+                                    <div class="font-bold text-sm">Regular
+                                        Pass</div>
+                                    <div id="label-harga-reg"
+                                        class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Rp
+                                        0</div>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="kelas" value="VIP"
+                                    class="peer hidden" />
+                                <div
+                                    class="p-4 rounded-xl border border-zinc-300 dark:border-zinc-700 peer-checked:border-lime-400 peer-checked:bg-lime-400/10 transition">
+                                    <div class="font-bold text-sm">VIP
+                                        Access</div>
+                                    <div id="label-harga-vip"
+                                        class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Rp
+                                        0</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="text-sm font-semibold">Jumlah Tiket (Maks.
+                            5)</span>
+                        <div class="flex items-center gap-3">
+                            <button type="button" id="btn-kurang"
+                                class="w-9 h-9 rounded-lg border border-zinc-300 dark:border-zinc-700 font-bold hover:border-lime-400">-</button>
+                            <span id="teks-jumlah"
+                                class="font-display font-bold text-lg w-6 text-center">1</span>
+                            <button type="button" id="btn-tambah"
+                                class="w-9 h-9 rounded-lg border border-zinc-300 dark:border-zinc-700 font-bold hover:border-lime-400">+</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="pt-4 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+                        <div>
+                            <span
+                                class="text-xs text-zinc-500 dark:text-zinc-400 block">Total
+                                Pembayaran</span>
+                            <span id="total-harga"
+                                class="font-display font-extrabold text-2xl text-lime-500 dark:text-lime-400">Rp
+                                0</span>
+                        </div>
+                        <button type="submit"
+                            class="px-6 py-3 rounded-xl bg-lime-400 text-zinc-950 font-bold text-sm hover:bg-lime-300 transition">
+                            Konfirmasi Tiket
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Kolom Kanan: Daftar E-Ticket -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h2
+                            class="font-display font-bold text-xl uppercase">E-Ticket
+                            Saya</h2>
+                        <span id="jumlah-riwayat"
+                            class="text-xs px-2.5 py-1 rounded-full bg-zinc-200 dark:bg-zinc-800 font-semibold">0
+                            Tiket</span>
+                    </div>
+                    <div id="wadah-eticket" class="space-y-4">
+                        <!-- Kartu E-Ticket dirender oleh tiket.js -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            class="border-t border-zinc-200 dark:border-zinc-800 py-6 text-center text-xs text-zinc-500">
+            &copy; 2026 PentasKampus — Portal Event, Konser & Pameran Seni
+            Mahasiswa
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/tiket.js"></script>
+    </body>
 </html>
