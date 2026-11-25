@@ -23,15 +23,14 @@
 </head>
 <body class="bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 font-sans transition-colors duration-200 min-h-screen flex flex-col">
 
-  <!-- HEADER & NAVIGASI -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
     <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
       <a href="index.html" class="font-display font-extrabold text-xl tracking-tight">
         PENTAS<span class="text-lime-500 dark:text-lime-400">KAMPUS.</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium" aria-label="Navigasi utama">
-        <a href="index.html" aria-current="page" class="text-lime-600 dark:text-lime-400 font-semibold transition">Beranda</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-lime-600 dark:text-lime-400 font-semibold">Beranda</a>
         <a href="event.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Event</a>
         <a href="detail.html?id=1" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Jadwal & Lineup</a>
         <a href="tiket.html" class="hover:text-lime-500 dark:hover:text-lime-400 transition">Pesan Tiket</a>
@@ -39,7 +38,7 @@
       </nav>
 
       <div class="flex items-center gap-2">
-        <button id="theme-toggle" type="button" aria-label="Ganti mode terang atau gelap" class="px-3 py-1.5 rounded-full text-xs font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-400 transition">
+        <button id="theme-toggle" type="button" class="px-3 py-1.5 rounded-full text-xs font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-400 transition">
           ☀️ Light
         </button>
         <a href="tiket.html" class="px-4 py-1.5 rounded-full text-xs font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition">
@@ -48,139 +47,99 @@
       </div>
     </div>
 
-    <!-- Navigasi Mobile -->
-    <nav class="flex md:hidden items-center gap-4 px-5 py-2.5 overflow-x-auto text-xs font-medium border-t border-zinc-200 dark:border-zinc-800" aria-label="Navigasi mobile">
-      <a href="index.html" aria-current="page" class="whitespace-nowrap text-lime-600 dark:text-lime-400 font-semibold">Beranda</a>
-      <a href="event.html" class="whitespace-nowrap hover:text-lime-500 dark:hover:text-lime-400 transition">Event</a>
-      <a href="detail.html?id=1" class="whitespace-nowrap hover:text-lime-500 dark:hover:text-lime-400 transition">Jadwal & Lineup</a>
-      <a href="tiket.html" class="whitespace-nowrap hover:text-lime-500 dark:hover:text-lime-400 transition">Pesan Tiket</a>
-      <a href="tentang.html" class="whitespace-nowrap hover:text-lime-500 dark:hover:text-lime-400 transition">Tentang</a>
+    <nav class="flex md:hidden items-center gap-4 px-5 py-2.5 overflow-x-auto text-xs font-medium border-t border-zinc-200 dark:border-zinc-800">
+      <a href="index.html" class="whitespace-nowrap text-lime-600 dark:text-lime-400 font-semibold">Beranda</a>
+      <a href="event.html" class="whitespace-nowrap">Event</a>
+      <a href="detail.html?id=1" class="whitespace-nowrap">Jadwal & Lineup</a>
+      <a href="tiket.html" class="whitespace-nowrap">Pesan Tiket</a>
+      <a href="tentang.html" class="whitespace-nowrap">Tentang</a>
     </nav>
   </header>
 
-  <main class="flex-1 max-w-6xl mx-auto w-full px-5 py-10 md:py-16 space-y-16 md:space-y-24">
+  <main class="flex-1 max-w-6xl mx-auto w-full px-5 py-8 md:py-12 space-y-12 md:space-y-16">
 
-    <!-- HERO SECTION -->
-    <section class="relative overflow-hidden rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-7 sm:p-10 md:p-14">
-      <!-- Aksen Latar Halus -->
-      <div class="pointer-events-none absolute -top-24 -right-24 w-72 h-72 rounded-full bg-lime-400/15 blur-3xl"></div>
-      <div class="pointer-events-none absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-lime-500/10 blur-3xl"></div>
+    <section class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 p-6 sm:p-8 md:p-11">
+      <p class="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400 mb-3">
+        Festival Mahasiswa 2026
+      </p>
 
-      <div class="relative z-10 max-w-4xl">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800/90 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 mb-6">
-          <span class="w-2 h-2 rounded-full bg-lime-500 dark:bg-lime-400 animate-pulse"></span>
-          Portal Festival Mahasiswa 2026
-        </div>
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-tight max-w-3xl mb-4">
+        Konser, Pameran Seni & Talkshow <span class="text-lime-500 dark:text-lime-400">Kampus</span>
+      </h1>
 
-        <h1 class="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl uppercase tracking-tight leading-[0.95] mb-6">
-          Panggung <span class="text-lime-500 dark:text-lime-400">Konser</span>, Seni & Gagasan Kampus.
-        </h1>
+      <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed mb-7">
+        Informasi jadwal acara, daftar penampil, sampai pemesanan tiket untuk rangkaian kegiatan seni dan musik mahasiswa tahun ini.
+      </p>
 
-        <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed mb-8">
-          Satu portal resmi untuk menjelajahi konser musik mahasiswa, pameran seni visual, hingga talkshow kreatif. Cek jadwal lineup terbaru dan amankan tiketmu sebelum habis.
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="tiket.html" class="px-5 py-2.5 rounded-full text-sm font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition">
+          Pesan Tiket
+        </a>
+        <a href="event.html" class="px-5 py-2.5 rounded-full text-sm font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-500 dark:hover:border-lime-400 transition">
+          Lihat Katalog Event
+        </a>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-5">
+        <p class="text-xs font-semibold text-lime-600 dark:text-lime-400 mb-1">Jumlah Penampil</p>
+        <p id="stat-penampil" class="font-display font-bold text-xl sm:text-2xl">20+ Penampil</p>
+        <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          Band kampus, musisi tamu, seniman visual, dan pembicara talkshow.
         </p>
+      </div>
 
-        <div class="flex flex-wrap items-center gap-3.5">
-          <a href="tiket.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition shadow-sm">
-            Pesan Tiket Sekarang
-            <span aria-hidden="true">→</span>
-          </a>
-          <a href="event.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold border border-zinc-300 dark:border-zinc-700 hover:border-lime-500 dark:hover:border-lime-400 hover:text-lime-600 dark:hover:text-lime-400 transition">
-            Jelajahi Katalog Event
-          </a>
-        </div>
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-5">
+        <p class="text-xs font-semibold text-lime-600 dark:text-lime-400 mb-1">Lokasi Panggung & Galeri</p>
+        <p id="stat-lokasi" class="font-display font-bold text-xl sm:text-2xl">3 Area Kampus</p>
+        <p id="stat-lokasi-desc" class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          Lapangan Utama, Galeri Seni Rupa, dan Auditorium Gedung Pusat.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-5">
+        <p class="text-xs font-semibold text-lime-600 dark:text-lime-400 mb-1">Jadwal Festival</p>
+        <p class="font-display font-bold text-xl sm:text-2xl">3 Hari Acara</p>
+        <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          Mulai pukul 10.00 sampai 22.00 WIB sesuai jadwal tiap kategori.
+        </p>
       </div>
     </section>
 
-    <!-- SOROTAN INFORMASI SINGKAT -->
-    <section aria-labelledby="highlight-heading">
-      <h2 id="highlight-heading" class="sr-only">Sorotan Informasi Festival</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-6 flex flex-col justify-between gap-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400">
-            Jumlah Penampil
-          </span>
-          <div>
-            <p id="stat-penampil" class="font-display font-extrabold text-3xl md:text-4xl tracking-tight">
-              20+ Penampil
-            </p>
-            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
-              Musisi indie, unit band mahasiswa, perupa visual, dan pembicara industri kreatif.
-            </p>
-          </div>
-        </div>
-
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-6 flex flex-col justify-between gap-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400">
-            Lokasi Panggung & Galeri
-          </span>
-          <div>
-            <p id="stat-lokasi" class="font-display font-extrabold text-3xl md:text-4xl tracking-tight">
-              3 Zona Utama
-            </p>
-            <p id="stat-lokasi-desc" class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
-              Panggung Utama Lapangan, Galeri Seni Rupa, dan Auditorium Kampus.
-            </p>
-          </div>
-        </div>
-
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 p-6 flex flex-col justify-between gap-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400">
-            Jadwal Festival
-          </span>
-          <div>
-            <p id="stat-jadwal" class="font-display font-extrabold text-3xl md:text-4xl tracking-tight">
-              3 Hari Penuh
-            </p>
-            <p id="stat-jadwal-desc" class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
-              Rangkaian acara dibuka pukul 10.00 – 22.00 WIB sepanjang pekan festival.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED EVENT (KONSER, PAMERAN SENI, TALKSHOW) -->
-    <section aria-labelledby="featured-heading" class="space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+    <section class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-lime-600 dark:text-lime-400 mb-2">
-            Pilihan Utama
-          </p>
-          <h2 id="featured-heading" class="font-display font-extrabold text-3xl md:text-4xl uppercase tracking-tight">
+          <h2 class="font-display font-bold text-2xl sm:text-3xl uppercase tracking-tight">
             Featured Event
           </h2>
           <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
-            Tiga agenda unggulan dari kategori Konser, Pameran Seni, dan Talkshow.
+            Pilihan acara utama dari kategori Konser, Pameran Seni, dan Talkshow.
           </p>
         </div>
-        <a href="event.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-lime-600 dark:text-lime-400 hover:underline whitespace-nowrap">
-          Lihat Semua Event <span aria-hidden="true">→</span>
+        <a href="event.html" class="text-sm font-semibold text-lime-600 dark:text-lime-400 hover:underline">
+          Semua event →
         </a>
       </div>
 
-      <!-- Grid Kartu Dirender Dinamis dari js/data.js -->
-      <div id="featured-events" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Diisi oleh JavaScript -->
-      </div>
+      <div id="featured-events" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
     </section>
 
-    <!-- BANNER CTA BAWAH -->
-    <section class="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-900 text-zinc-50 dark:bg-lime-400 dark:text-zinc-950 p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-      <div class="max-w-xl">
-        <h2 class="font-display font-extrabold text-2xl sm:text-3xl uppercase tracking-tight">
-          Jangan Sampai Kehabisan Kuota!
+    <section class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-900 text-zinc-50 dark:bg-zinc-900 p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5">
+      <div>
+        <h2 class="font-display font-bold text-xl sm:text-2xl uppercase tracking-tight">
+          Mau datang ke acaranya?
         </h2>
-        <p class="text-sm sm:text-base text-zinc-300 dark:text-zinc-800 mt-2">
-          Tiket presale terbatas untuk mahasiswa dan umum. Pilih acara favoritmu dan selesaikan pemesanan dalam hitungan menit.
+        <p class="text-sm text-zinc-400 mt-1">
+          Cek jadwal lengkap atau langsung pilih tiket sebelum kuota penuh.
         </p>
       </div>
       <div class="flex flex-wrap items-center gap-3">
-        <a href="detail.html?id=1" class="px-5 py-3 rounded-full text-sm font-semibold border border-zinc-700 dark:border-zinc-900/30 hover:border-lime-400 dark:hover:bg-zinc-950/10 transition">
-          Cek Jadwal & Lineup
+        <a href="detail.html?id=1" class="px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-zinc-700 hover:border-lime-400 transition">
+          Jadwal & Lineup
         </a>
-        <a href="tiket.html" class="px-6 py-3 rounded-full text-sm font-bold bg-lime-400 text-zinc-950 dark:bg-zinc-950 dark:text-lime-400 hover:opacity-90 transition">
-          Pesan Tiket
+        <a href="tiket.html" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-lime-400 text-zinc-950 hover:bg-lime-300 transition">
+          Beli Tiket
         </a>
       </div>
     </section>
@@ -194,132 +153,90 @@
   <script src="js/data.js"></script>
   <script src="js/theme.js"></script>
   <script>
-    (function () {
-      const container = document.getElementById('featured-events');
+    const listEl = document.getElementById('featured-events');
 
-      function formatHarga(harga) {
-        if (harga === undefined || harga === null || harga === '') return 'Lihat Detail';
-        if (typeof harga === 'number') {
-          return harga === 0 ? 'Gratis' : 'Rp ' + harga.toLocaleString('id-ID');
-        }
-        const cleaned = String(harga).trim();
-        if (cleaned === '0' || cleaned.toLowerCase() === 'gratis') return 'Gratis';
-        return cleaned;
+    function rupiah(val) {
+      if (val === 0 || String(val).toLowerCase() === 'gratis') return 'Gratis';
+      if (typeof val === 'number') return 'Rp ' + val.toLocaleString('id-ID');
+      return val || '-';
+    }
+
+    function tampilkanFeatured() {
+      if (!listEl || typeof dataEvent === 'undefined' || !Array.isArray(dataEvent)) return;
+
+      const kategoriUtama = ['konser', 'pameran', 'talkshow'];
+      const pilihan = [];
+
+      kategoriUtama.forEach((kat) => {
+        const ketemu = dataEvent.find(
+          (item) =>
+            !pilihan.includes(item) &&
+            (item.kategori || '').toLowerCase().includes(kat)
+        );
+        if (ketemu) pilihan.push(ketemu);
+      });
+
+      for (const item of dataEvent) {
+        if (pilihan.length === 3) break;
+        if (!pilihan.includes(item)) pilihan.push(item);
+      }
+      
+      const daftarLokasi = [...new Set(dataEvent.map((e) => e.lokasi).filter(Boolean))];
+      if (daftarLokasi.length > 0) {
+        document.getElementById('stat-lokasi').textContent = daftarLokasi.length + ' Lokasi';
+        document.getElementById('stat-lokasi-desc').textContent = daftarLokasi.slice(0, 3).join(', ');
       }
 
-      function normalizeEvent(ev, index) {
-        return {
-          id: ev.id ?? (index + 1),
-          judul: ev.judul || ev.nama || ev.title || 'Event Kampus',
-          kategori: ev.kategori || ev.category || 'Event',
-          tanggal: ev.tanggal || ev.jadwal || ev.date || 'Segera diumumkan',
-          lokasi: ev.lokasi || ev.tempat || ev.venue || ev.location || 'Area Kampus',
-          harga: ev.harga ?? ev.price ?? '',
-          gambar: ev.gambar || ev.poster || ev.image || ev.img || '',
-          deskripsi: ev.deskripsi || ev.ringkasan || ev.description || 'Ikuti keseruan rangkaian acara PentasKampus bersama mahasiswa dan komunitas kreatif.'
-        };
-      }
+      listEl.innerHTML = pilihan.map((ev, i) => {
+        const id = ev.id ?? i + 1;
+        const judul = ev.judul || ev.nama || 'Event Kampus';
+        const kategori = ev.kategori || 'Event';
+        const tanggal = ev.tanggal || ev.jadwal || '-';
+        const lokasi = ev.lokasi || '-';
+        const gambar = ev.gambar || ev.poster || '';
+        const deskripsi = ev.deskripsi || '';
 
-      function renderFeatured() {
-        if (!container) return;
-
-        if (typeof dataEvent === 'undefined' || !Array.isArray(dataEvent) || dataEvent.length === 0) {
-          container.innerHTML = `
-            <div class="col-span-full rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-700 p-8 text-center text-sm text-zinc-500">
-              Data event belum tersedia. Pastikan <code>dataEvent</code> di <code>js/data.js</code> sudah dimuat.
-            </div>
-          `;
-          return;
-        }
-
-        const normalized = dataEvent.map(normalizeEvent);
-
-        // Ambil 1 event unggulan untuk masing-masing kategori: Konser, Pameran Seni, Talkshow
-        const targetKeywords = ['konser', 'pameran', 'talkshow'];
-        const picked = [];
-        const pickedIds = new Set();
-
-        targetKeywords.forEach((keyword) => {
-          const match = normalized.find(
-            (ev) => !pickedIds.has(ev.id) && ev.kategori.toLowerCase().includes(keyword)
-          );
-          if (match) {
-            picked.push(match);
-            pickedIds.add(match.id);
-          }
-        });
-
-        // Fallback jika salah satu kategori belum ada di dataEvent, lengkapi hingga 3 kartu
-        for (const ev of normalized) {
-          if (picked.length >= 3) break;
-          if (!pickedIds.has(ev.id)) {
-            picked.push(ev);
-            pickedIds.add(ev.id);
-          }
-        }
-
-        // Perbarui sorotan lokasi & jumlah event secara otomatis jika data tersedia
-        const uniqueLocations = [...new Set(normalized.map((ev) => ev.lokasi).filter(Boolean))];
-        if (uniqueLocations.length > 0) {
-          const statLokasi = document.getElementById('stat-lokasi');
-          const statLokasiDesc = document.getElementById('stat-lokasi-desc');
-          if (statLokasi) statLokasi.textContent = `${uniqueLocations.length} Lokasi Utama`;
-          if (statLokasiDesc) statLokasiDesc.textContent = uniqueLocations.slice(0, 3).join(', ') + '.';
-        }
-
-        const totalLineup = dataEvent.reduce((acc, ev) => {
-          if (Array.isArray(ev.lineup)) return acc + ev.lineup.length;
-          if (Array.isArray(ev.penampil)) return acc + ev.penampil.length;
-          return acc;
-        }, 0);
-        if (totalLineup > 0) {
-          const statPenampil = document.getElementById('stat-penampil');
-          if (statPenampil) statPenampil.textContent = `${totalLineup}+ Penampil`;
-        }
-
-        container.innerHTML = picked.map((ev) => `
-          <article class="group rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 flex flex-col transition hover:border-lime-500/70 dark:hover:border-lime-400/70">
+        return `
+          <article class="rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/60 flex flex-col">
             <div class="relative aspect-[16/10] bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
               ${
-                ev.gambar
-                  ? `<img src="${ev.gambar}" alt="${ev.judul}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.style.display='none'">`
-                  : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-950 font-display font-extrabold text-lg uppercase text-lime-400/80 px-4 text-center">${ev.kategori}</div>`
+                gambar
+                  ? `<img src="${gambar}" alt="${judul}" class="w-full h-full object-cover">`
+                  : `<div class="w-full h-full flex items-center justify-center text-xs font-bold uppercase text-zinc-500">${kategori}</div>`
               }
-              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-zinc-950/80 text-lime-400 backdrop-blur-sm border border-lime-400/30">
-                ${ev.kategori}
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-zinc-950/80 text-lime-400">
+                ${kategori}
               </span>
             </div>
 
-            <div class="p-5 flex-1 flex flex-col">
-              <div class="text-xs text-zinc-500 dark:text-zinc-400 flex flex-wrap items-center gap-x-3 gap-y-1 mb-2.5">
-                <span>📅 ${ev.tanggal}</span>
-                <span>📍 ${ev.lokasi}</span>
-              </div>
-
-              <h3 class="font-display font-bold text-xl leading-snug mb-2 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition">
-                <a href="detail.html?id=${encodeURIComponent(ev.id)}">${ev.judul}</a>
-              </h3>
-
-              <p class="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-5 flex-1">
-                ${ev.deskripsi}
+            <div class="p-4 flex-1 flex flex-col">
+              <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-1.5">
+                ${tanggal} · ${lokasi}
               </p>
 
-              <div class="pt-4 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-3">
-                <div>
-                  <span class="block text-[11px] uppercase tracking-wider text-zinc-500">Tiket</span>
-                  <span class="font-bold text-sm text-zinc-900 dark:text-zinc-100">${formatHarga(ev.harga)}</span>
-                </div>
-                <a href="detail.html?id=${encodeURIComponent(ev.id)}" class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-xs font-bold bg-zinc-950 text-white dark:bg-lime-400 dark:text-zinc-950 hover:opacity-90 transition">
-                  Detail <span aria-hidden="true">→</span>
+              <h3 class="font-display font-bold text-base sm:text-lg leading-snug mb-2">
+                <a href="detail.html?id=${id}" class="hover:text-lime-500 dark:hover:text-lime-400 transition">
+                  ${judul}
+                </a>
+              </h3>
+
+              <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 flex-1">
+                ${deskripsi}
+              </p>
+
+              <div class="pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+                <span class="text-sm font-bold">${rupiah(ev.harga)}</span>
+                <a href="detail.html?id=${id}" class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-zinc-950 text-white dark:bg-lime-400 dark:text-zinc-950 hover:opacity-90 transition">
+                  Detail
                 </a>
               </div>
             </div>
           </article>
-        `).join('');
-      }
+        `;
+      }).join('');
+    }
 
-      document.addEventListener('DOMContentLoaded', renderFeatured);
-    })();
+    tampilkanFeatured();
   </script>
 </body>
 </html>
